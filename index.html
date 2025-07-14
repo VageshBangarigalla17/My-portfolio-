@@ -1,60 +1,102 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vagesh Bangarigalla | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>html { scroll-behavior: smooth; }</style>
 </head>
-<body>
-  <header>
-    <div class="hero">
-      <img src="profile.jpg" alt="Vagesh Bangarigalla" class="hero-img" />
-      <h1>Vagesh Bangarigalla</h1>
-      <p>Frontend Developer | AI-Web Creator</p>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Vagesh Bangarigalla</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#skills" class="hover:text-blue-600">Skills</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>I'm a passionate frontend developer who blends AI with web development to create cutting-edge digital experiences. I specialize in building responsive, clean, and intelligent user interfaces. My dream is to create real-world AI agents like JARVIS and bring futuristic technology into everyday life.</p>
-  </section>
-
-  <section class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML</li><li>CSS</li><li>JavaScript</li>
-      <li>Git & GitHub</li>
-      <li>AI Tools (ChatGPT, D-ID, Runway)</li>
-      <li>Cybersecurity</li>
-      <li>Python (AI Assistants)</li>
-    </ul>
-  </section>
-
-  <section class="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>AI Image Generator</h3>
-      <p>Generate AI images from prompts using AI APIs.</p>
-    </div>
-    <div class="project">
-      <h3>AI Video Generator</h3>
-      <p>Convert story prompts into AI-generated videos.</p>
-    </div>
-    <div class="project">
-      <h3>AI Cybersecurity Agent</h3>
-      <p>Scan, test, and secure systems using ethical hacking AI tools.</p>
-    </div>
-    <div class="project">
-      <h3>JARVIS AI Assistant</h3>
-      <p>A voice-based assistant with real-world actions using Raspberry Pi.</p>
+  <section class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-100 to-purple-100">
+    <div class="text-center px-6">
+      <img src="WhatsApp Image 2025-07-14 at 8.59.10 PM.jpeg" class="w-40 h-40 mx-auto rounded-full mb-4 object-cover shadow-lg" alt="Vagesh">
+      <h2 class="text-4xl font-bold">Hi, I'm Vagesh</h2>
+      <p class="text-xl text-gray-700 mt-2">Frontend Developer | AI & ML Engineering Student</p>
+      <p class="mt-4 max-w-xl mx-auto">Currently pursuing B.Tech in AI & ML with hands-on projects in AI, web development, and automation. Strong foundation in frontend/backend tech and a passion for learning new tools.</p>
+      <div class="mt-6">
+        <a href="Resume.pdf" class="inline-block px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Download Resume</a>
+      </div>
     </div>
   </section>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: vagesh242@gmail.com</p>
-    <p>Phone: +91 91215 68042</p>
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <p class="text-gray-600 max-w-3xl mx-auto">
+        I'm a passionate and self-driven Computer Science student, currently in my 3rd year of B.Tech specializing in Artificial Intelligence and Machine Learning. With a diploma background in Electrical and Electronics, I've transitioned into full-stack web development, focusing on React, Node.js, and AI tools integration.
+      </p>
+    </div>
   </section>
+
+  <section id="skills" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-10">Skills & Tools</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
+        <div><i class="fa-brands fa-html5 fa-2x text-orange-600"></i><p>HTML</p></div>
+        <div><i class="fa-brands fa-css3-alt fa-2x text-blue-500"></i><p>CSS</p></div>
+        <div><i class="fa-brands fa-js fa-2x text-yellow-500"></i><p>JavaScript</p></div>
+        <div><i class="fa-brands fa-react fa-2x text-cyan-500"></i><p>React.js</p></div>
+        <div><i class="fa-brands fa-node fa-2x text-green-600"></i><p>Node.js</p></div>
+        <div><i class="fa-solid fa-database fa-2x text-indigo-500"></i><p>MySQL / MongoDB</p></div>
+        <div><i class="fa-solid fa-gears fa-2x text-gray-700"></i><p>REST APIs</p></div>
+        <div><i class="fa-solid fa-code fa-2x text-purple-500"></i><p>Python</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">AI Image Generator Agent</h3>
+          <p>Generates high-quality images using the Google Gemini API based on user prompts.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">Bluetooth-Controlled Water Sprinkler</h3>
+          <p>Arduino-based smart irrigation with Bluetooth control and relay switching.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">Simon Game</h3>
+          <p>A memory game built with HTML, CSS, and JavaScript for interactive learning.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">Personal Portfolio Website</h3>
+          <p>This website — built using HTML, CSS, JS, and TailwindCSS — to showcase skills and work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+      <p class="text-gray-600">Let's collaborate or discuss opportunities!</p>
+      <div class="mt-6 space-x-4 text-lg">
+        <a href="mailto:vagesh242@gmail.com" class="text-blue-600 hover:underline"><i class="fa-solid fa-envelope"></i> vagesh242@gmail.com</a>
+        <a href="https://github.com/VageshBangarigalla17" class="text-gray-800 hover:underline" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        <span><i class="fa-solid fa-phone"></i> +91 9121568042</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-6 text-center text-gray-500 text-sm">
+    &copy; 2025 Vagesh Bangarigalla. Built with passion and code.
+  </footer>
 </body>
 </html>
